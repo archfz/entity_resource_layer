@@ -14,5 +14,16 @@
         "source": "https://github.com/drupal-generics/entity_resource_layer/"
     },
     "minimum-stability": "dev",
-    "require": {}
+    "prefer-stable" : true,
+    "require": {},
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^2.2 || ^3.0.2",
+        "wimg/php-compatibility": "*",
+        "drupal/coder": "^8",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.4.4"
+    },
+    "scripts": {
+        "post-install-cmd": "\"vendor/bin/phpcs\" --config-set installed_paths $(./vendor/bin/phpcs --config-show installed_path | grep installed_paths | sed 's/^.*: //'),vendor/drupal/coder/coder_sniffer/Drupal",
+        "post-update-cmd" : "\"vendor/bin/phpcs\" --config-set installed_paths $(./vendor/bin/phpcs --config-show installed_path | grep installed_paths | sed 's/^.*: //'),vendor/drupal/coder/coder_sniffer/Drupal"
+    }
 }
