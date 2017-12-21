@@ -1,0 +1,18 @@
+{
+    "name": "drupal-generics/entity_resource_layer",
+    "description": "Provides plugins that can operate above the default core REST resource",
+    "type": "drupal-module",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "zoltan.fodor",
+            "email": "zoltan.fodor@pitechnologies.ro"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/drupal-generics/entity_resource_layer/issues",
+        "source": "https://github.com/drupal-generics/entity_resource_layer/"
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
