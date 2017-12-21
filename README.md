@@ -1,4 +1,6 @@
 # Entity resource layer
+[![Build Status](https://travis-ci.org/drupal-generics/entity_resource_layer.svg?branch=master)](https://travis-ci.org/drupal-generics/entity_resource_layer)
+
 Provides plugins that can operate above the default core REST resource 
 plugins specifically for entities. By this allows you to easily serve 
 and create your entities the way that you want. But this is not all,
